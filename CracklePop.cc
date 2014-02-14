@@ -4,10 +4,9 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int i = 1;    
-
+    int i = 1;
     while(i <= 100) {
-        if(i%3 == 0 && i%5 == 0) 
+        if(i%15 == 0)
             cout << "CracklePop" <<endl; 
         else if(i%3 == 0)
             cout << "Crackle"  <<endl;
@@ -18,5 +17,10 @@ int main(int argc, char const *argv[])
     
         i++;
     }
+
+
+    //int pattern[6] = {2, 1, 2, 1, 2}:
+    //int j = pattern[0]:
+    //int j = 0;
     return 0;
 }

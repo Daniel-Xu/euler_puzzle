@@ -18,9 +18,6 @@ int main(int argc, char const *argv[])
         i++;
     }
 
-
     //int pattern[6] = {2, 1, 2, 1, 2}:
-    //int j = pattern[0]:
-    //int j = 0;
     return 0;
 }

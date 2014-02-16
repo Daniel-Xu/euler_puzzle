@@ -22,22 +22,30 @@ bool isPrime(int num)
 int main(int argc, char const *argv[])
 {
     
-    int sum = 2;
-    int i = 3;
+    long sum = 2;
+    //int i = 3;
 
-    while(1) {
-        if(isPrime(i)) {
-            int sum2 = sum + i;
-            if(sum2 < 2000000) {
-                sum = sum2;
-            } else {
-                cout << "sum is: " << sum << endl;
-                return sum;
-            }
-        }
+    //while(1) {
+        //if(isPrime(i)) {
+            //int sum2 = sum + i;
+            //if(sum2 < 2000000) {
+                //sum = sum2;
+            //} else {
+                //cout << "sum is: " << sum << endl;
+                //return sum;
+            //}
+        //}
 
-        i += 2;
+        //i += 2;
+    //}
+
+    for (int i = 3; i < 2000000; i+=2)
+    {
+        if(isPrime(i))
+            sum += i;
     }
+
+    cout << "sum is: " << sum << endl;
 
     return 0;
 }

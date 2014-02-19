@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
     int max = 0;
     for (int i = 999; i >= 100; --i)
     {
-        for (int j = 999; j >= 100; --j)
+        for (int j = 999; j >= i; --j)
         {
             result = i * j;
             if(isPaline(result)) {

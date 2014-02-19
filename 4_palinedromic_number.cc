@@ -19,9 +19,19 @@ int main(int argc, char const *argv[])
 {
     int result = 0;
     int max = 0;
+    int intervel = 0;
+    int init = 0;
     for (int i = 999; i >= 100; --i)
     {
-        for (int j = 999; j >= i; --j)
+        if(i % 11 == 0) {
+            intervel = 1;
+            init = 999;
+        } else {
+            intervel = 11;
+            init = 990;
+        }
+
+        for (int j = init; j >= i; j -= intervel)
         {
             result = i * j;
             if(isPaline(result)) {
